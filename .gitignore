@@ -1,0 +1,17 @@
+.DS_Store
+.vscode/
+.idea/
+
+*.log
+error_log
+logs/
+cache/
+tmp/
+temp/
+
+.env
+.env.*
+config.local.php
+*_local.php
+
+node_modules/
