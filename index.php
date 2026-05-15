@@ -84,7 +84,7 @@ if ( isset( $_POST[ 'toolkit_id' ] ) ) {
                         </div><br><input type="submit" value="Go" class="cool_button">
                     </form>
                     <p>&nbsp;</p>
-                    <p>Teachers Toolkit is a free tool for easy classroom sharing of selected <a href="https://skeptoid.com" target="_blank">Skeptoid podcast</a> episodes. </p>
+                    <p>Teachers Toolkit is a free tool for easy classroom sharing of selected <a href="https://skeptoid.com" target="_blank">Skeptoid podcast</a> episodes. Glob</p>
                     <h2>Students</h2>
                     <p>If you've been given a 4-character program code by your teacher, enter it above to access the content.</p>
                     <h2>Teachers</h2>
