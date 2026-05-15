@@ -88,7 +88,7 @@ if ( strlen( $toolkit_id ) == 4 ) {
 
                         ?>
                 <div class="block">
-                    <img src="https://skeptoid.com/episode_art/<?=str_pad($ep['episode_number'],4,'0',STR_PAD_LEFT)?>-square.jpg" alt="" class="img">
+                    <img src="https://skeptoid.com/eps1200x744/ep<?=$ep['episode_number']?>.jpg" alt="" class="img">
                     <h2>
                         <?=$ep['title']?>
                     </h2>
