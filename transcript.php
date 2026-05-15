@@ -67,7 +67,7 @@ if ( !$_COOKIE[ 'skeptoid_id' ] ) {
 						<?php
 
 						// Display the image
-						echo '<img src="https://skeptoid.com/eps1200x744/' . $id . '.jpg" style="width: 100%;" alt="' . $title . '" class="noprint">';
+						echo '<img src="https://skeptoid.com/eps1200x744/ep' . $episode_number . '.jpg" style="width: 100%;" alt="' . $title . '" class="noprint">';
 
 						// Get the episode text
 						$the_html = file_get_contents( '/home/skeptoidcom/public_html/html/' . $html );

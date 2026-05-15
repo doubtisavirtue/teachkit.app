@@ -66,8 +66,8 @@ if ( strlen( $toolkit_id ) == 4 ) {
                         echo $row[ 'teacher_class' ];
                         if ( $row[ 'teacher_class' ] != '' )echo '<br>';
 
-                        ?>Available until
-                        <?=date('j M, Y', strtotime($row['expire']))?><br>Program
+                        ?><!--Available until
+                        <?=date('j M, Y', strtotime($row['expire']))?><br>//-->Program
                         <strong>
                             <?=$toolkit_id?>
                         </strong>
@@ -88,14 +88,14 @@ if ( strlen( $toolkit_id ) == 4 ) {
 
                         ?>
                 <div class="block">
-                    <img src="https://skeptoid.com/eps1200x744/<?=$ep['id']?>.jpg" alt="" class="img">
+                    <img src="https://skeptoid.com/episode_art/<?=str_pad($ep['episode_number'],4,'0',STR_PAD_LEFT)?>-square.jpg" alt="" class="img">
                     <h2>
                         <?=$ep['title']?>
                     </h2>
                     <p class="details"><span style="white-space: nowrap;">Skeptoid Podcast</span> &bull; <span style="white-space: nowrap;">Episode <?=$ep['episode_number']?></span> &bull;
-                        <span style="white-space: nowrap;">
+                        <!--<span style="white-space: nowrap;">
                             <?=date('M Y', strtotime($ep['pub_date']))?>
-                        </span> &bull;
+                        </span> &bull;//-->
                         <span style="white-space: nowrap;">
                             <?=$minutes.' '?>minutes</span>
                     </p>
