@@ -1,0 +1,147 @@
+/* CSS Document */
+
+/*
+Palette from coolors.co:
+Skeptoid blue: #036
+Electric blue: #054A91
+Steel blue: #3E7CB1
+Footer stuck to the bottom: https://matthewjamestaylor.com/bottom-footer
+*/
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700,700i');*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Exo+2:800');
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #036;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: #EEE;
+}
+h1, h2, h3, h4 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 800;
+    color: #054A91;
+}
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+h2 {
+    font-size: 1.25em;
+    margin: 5px 0;
+}
+#container {
+    min-height: 100%;
+    position: relative;
+}
+header {
+    background: #036;
+    padding: 5px 0 10px;
+    text-align: center;
+}
+#body {
+    padding: 10px;
+    padding-bottom: 160px;   /* Height of the footer */
+    text-align: center;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;   /* Height of the footer */
+    background: #6cf;
+}
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+.smaller {
+    font-size: .75em;
+}
+.details {
+    font-style: italic;
+    color: #3E7CB1;
+    margin: 0;
+}
+.indent {
+    margin: 0 20px;
+}
+.descrip {
+    color: #036;
+    margin: 0;
+}
+.blockwrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.block {
+    background-color: white;
+    border: 1px solid #DDD;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 2px 0;
+    text-align: left;
+    clear: both;
+    border-radius: 3px;
+}
+.img {
+    width: 40%;
+    max-width: 323px;
+    max-height: 200px;
+    float: right;
+    margin: 0 0 5px 10px;
+}
+.big_entry {
+    font-size: 26px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+.cool_button {
+    font-family: "PT Sans", sans-serif;
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 5px 3px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 18px;
+    border-radius: .5em;
+    color: white;
+    border: none;
+    background: #036;
+    -webkit-appearance: none;
+}
+.cool_button:hover {
+    background: #2856a7;
+}
+.cool_button:active {
+    background: #a73128;
+}
+.redital {
+    color: red;
+    font-style: italic;
+}
+.grayital {
+    color: slategray;
+    font-style: italic;
+}
+@media print {
+    .noprint {
+        display: none;
+    }
+    body {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
