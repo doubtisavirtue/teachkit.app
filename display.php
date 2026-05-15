@@ -109,9 +109,7 @@ if ( strlen( $toolkit_id ) == 4 ) {
                     <?php } ?>
                     <audio controls preload="none">
                         <source src="https://skeptoid.com/toolkit/<?=$ep['id']?>,<?=$_COOKIE['u']?>,<?=$toolkit_id?>.mp3" type="audio/mp3">
-                        <p class="grayital">Your browser does not support the audio tag.</p>
                     </audio>
-                
                 </div>
                 <?php }} else { ?>
                 <div class="block">

@@ -36,7 +36,7 @@
                     <p>Episodes contain no ads, access is unrestricted, and there is no need for students to register, log in, or subscribe to anything. No personal information is collected.</p>
                     <p>See a sample toolkit here: <a href="/abcd">teachkit.app/abcd</a></p>
                     <p>If you are an educator and wish to access the Teachers Toolkit to use Skeptoid in your classroom, visit <a href="https://skeptoid.com/teachers" target="_blank">skeptoid.com/teachers</a>.</p>
-                    <p>For more of the Skeptoid podcast, subscribe to the free weekly show: <a href="https://itunes.apple.com/us/podcast/skeptoid/id203844864" target="_blank">iTunes</a> | <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9za2VwdG9pZC5jb20vcG9kY2FzdC54bWw=" target="_blank">Google</a> | <a href="https://open.spotify.com/show/1Vi8T6WT1HAKVwFfWc4A3a" target="_blank">Spotify</a> | <a href="http://www.stitcher.com/s?fid=8116&refid=stpr" target="_blank">Stitcher</a></p>
+                    <p>For more of the Skeptoid podcast, subscribe to the free weekly show: <a href="https://itunes.apple.com/us/podcast/skeptoid/id203844864" target="_blank">iTunes</a> | <a href="https://open.spotify.com/show/1Vi8T6WT1HAKVwFfWc4A3a" target="_blank">Spotify</a></p>
                     <p>Skeptoid and the Teachers Toolkit are products of Skeptoid Media, a 501(c)(3) educational nonprofit. <a href="https://skeptoid.org" target="_blank">skeptoid.org</a></p>
                 </div>
             </div>
