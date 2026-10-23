@@ -4,7 +4,7 @@
 include( 'includes/config.inc.php' );
 
 // Param
-$toolkit_id = preg_replace( '/[^a-z0-9 ]/', '', strtolower( $_GET[ 'id' ] ) );
+$toolkit_id = preg_replace( '/[^a-z0-9 ]/', '', strtolower( $_GET[ 'id' ] ?? '' ) );
 
 // Validate
 if ( strlen( $toolkit_id ) == 4 ) {
@@ -83,8 +83,8 @@ if ( strlen( $toolkit_id ) == 4 ) {
                 $r = mysql_query( $q );
                 if ( mysql_num_rows( $r ) > 0 ) {
                     while ( $ep = mysql_fetch_array( $r ) ) {
-                        $time = explode( ':', $ep[ 'duration' ] );
-                        $minutes = $time[ 0 ] + round( $time[ 1 ] / 60, 0 );
+                        $time = explode( ':', $ep[ 'duration' ] ?? '' );
+                        $minutes = ( int )$time[ 0 ] + round( ( int )( $time[ 1 ] ?? 0 ) / 60, 0 );
 
                         ?>
                 <div class="block">
@@ -108,7 +108,7 @@ if ( strlen( $toolkit_id ) == 4 ) {
                     </p>
                     <?php } ?>
                     <audio controls preload="none">
-                        <source src="https://skeptoid.com/toolkit/<?=$ep['id']?>,<?=$_COOKIE['u']?>,<?=$toolkit_id?>.mp3" type="audio/mp3">
+                        <source src="https://skeptoid.com/toolkit/<?=$ep['id']?>,<?=$_COOKIE['u'] ?? ''?>,<?=$toolkit_id?>.mp3" type="audio/mp3">
                     </audio>
                 </div>
                 <?php }} else { ?>

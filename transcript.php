@@ -1,7 +1,7 @@
 <?php
 
 // Get ID
-$id = preg_replace( '/[^0-9]/', '', $_GET[ 'id' ] );
+$id = preg_replace( '/[^0-9]/', '', $_GET[ 'id' ] ?? '' );
 if ( !$id )header( "Location: https://teachkit.app" );
 if ( $id < 4001 || $id > 4999 )header( "Location: https://teachkit.app" );
 
@@ -24,7 +24,7 @@ $this_url = 'skep.us/' . $id;
 $author_shortcut = preg_replace( "/[^a-z]/", '', strtolower( $author ) );
 
 // Redirect clever boys if this episode hasn't come out yet
-if ( !$_COOKIE[ 'skeptoid_id' ] ) {
+if ( empty( $_COOKIE[ 'skeptoid_id' ] ) ) {
     if ( $pub_date > ( date( "Y-m-d" ) . ' 07:00:00' ) )header( 'Location: https://teachkit.app' );
 }
 
